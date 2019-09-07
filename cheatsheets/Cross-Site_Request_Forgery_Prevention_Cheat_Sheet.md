@@ -272,7 +272,7 @@ This approach has two main problems. One that it would mandate all requests to h
 
 The following shows techniques presumed to be CSRF mitigations but none of them fully/actually mitigates a CSRF vulnerability.
 
-- **CORS**: CORS is a header designed to relax Same-Origin-Policy when cross-origin communication between sites is required. It is not designed, nor prevents CSRF attacks.
+- **CORS**: CORS is a header designed to relax Same-Origin-Policy when cross-origin communication between sites is required. It does not prevent CSRF attacks, nor is it designed to.
 - **Using HTTPS**: Using HTTPS has nothing to do with the protection from CSRF attacks. Resources that are under HTTPS are still vulnerable to CSRF if proper CSRF mitigations described above are not included.
 - More myths can be found [here](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29).
 
